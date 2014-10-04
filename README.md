@@ -13,10 +13,7 @@ Currently, there is no usage of any existing cores, and so the fact that
 FuseSOC only has one cores_root is not a problem.
 
 At present, this will only work with my fork of fusesoc, available at
-https://github.com/yanidubin/fusesoc, and using the Parallella-Support
-branch. You can clone this using:
-
-  git clone https://github.com/yanidubin/fusesoc -b Parallella-Support
+https://github.com/yanidubin/fusesoc.
 
 Follow the Quick Start instructions for the Install step from that repo
 to compile and initialise fusesoc.
