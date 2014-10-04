@@ -1,0 +1,11 @@
+set -loop_iteration_limit 1000
+run
+-ifn parallella_z7_top.prj
+-top parallella_z7_top
+-p xc7z020clg400-1
+-ofn parallella_z7_top.ngc
+-vlgincdir {../src/parallella/data}
+-sd {implementation}
+-opt_mode speed
+-opt_level 1
+-netlist_hierarchy rebuilt

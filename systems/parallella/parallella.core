@@ -1,0 +1,43 @@
+CAPI=1
+[main]
+depend =
+
+simulators =
+
+[verilog]
+src_files =
+ rtl/verilog/fifos/fifo_mem.v
+ rtl/verilog/fifos/fifo_full_block.v
+ rtl/verilog/fifos/fifo_empty_block.v
+ rtl/verilog/common/synchronizer.v
+ rtl/verilog/fifos/fifo.v
+ rtl/verilog/common/toggle2pulse.v
+ rtl/verilog/common/pulse2toggle.v
+ rtl/verilog/elink/ewrapper_link_txo.v
+ rtl/verilog/elink/ewrapper_link_rxi.v
+ rtl/verilog/common/pulse2pulse.v
+ rtl/verilog/common/mux4.v
+ rtl/verilog/axi/axi_slave_addrch.v
+ rtl/verilog/parallella-I/fpgacfg.v
+ rtl/verilog/elink/ewrapper_link_transmitter.v
+ rtl/verilog/elink/ewrapper_link_receiver.v
+ rtl/verilog/elink/ewrapper_io_tx_slow.v
+ rtl/verilog/elink/ewrapper_io_rx_slow.v
+ rtl/verilog/clocks/io_clock_gen_600mhz.v
+ rtl/verilog/axi/axi_slave_wr.v
+ rtl/verilog/axi/axi_slave_rd.v
+ rtl/verilog/axi/axi_master_wr.v
+ rtl/verilog/axi/axi_master_rd.v
+ rtl/verilog/elink/ewrapper_link_top.v
+ rtl/verilog/axi/axi_slave.v
+ rtl/verilog/axi/axi_master.v
+ rtl/verilog/axi/axi_elink_if.v
+ rtl/verilog/parallella-I/parallella.v
+ rtl/verilog/parallella-I/parallella_z7_top.v
+ rtl/verilog/gpio/parallella_gpio_emio.v
+ rtl/verilog/system_stub.v
+#rtl/system/system.v
+
+tb_private_src_files =
+
+include_files =
