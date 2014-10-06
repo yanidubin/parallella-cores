@@ -7,9 +7,9 @@ backend = ise
 
 [ise]
 ucf_files = 
- data/parallella_timing.ucf
- data/parallella_z7020_loc.ucf
- data/parallella_z70x0_loc.ucf
+ boards/parallella-I/constraints/parallella_timing.ucf
+ boards/parallella-I/constraints/parallella_z7020_loc.ucf
+ boards/parallella-I/constraints/parallella_z70x0_loc.ucf
 
 family = zynq
 device = xc7z020
@@ -18,16 +18,16 @@ speed = -1
 top_module = parallella_z7_top
 
 global_includes =
- rtl/verilog/include/version.v
- rtl/verilog/include/fpga_constants.v
+ fpga/projects/parallella_7020_headless/version.v
+ fpga/hdl/parallella-I/fpga_constants.v
 
 tcl_files =
  tcl/system.tcl
  tcl/synth.tcl
 
 system_files =
- system/system.mhs
- system/data/ps7_system_prj.xml
+ fpga/edk/parallella_7020_headless/system.mhs
+ fpga/edk/parallella_7020_headless/data/ps7_system_prj.xml
 
 custom_scripts =
  scripts/run_synthesis.xst

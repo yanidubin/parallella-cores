@@ -1,7 +1,7 @@
 exec echo `pwd` > pwdfile
-exec cp ../src/parallella/system/system.mhs .
+exec cp ../src/parallella/fpga/edk/parallella_7020_headless/system.mhs .
 exec mkdir -p data
-exec cp ../src/parallella/system/data/ps7_system_prj.xml data
+exec cp ../src/parallella/fpga/edk/parallella_7020_headless/data/ps7_system_prj.xml data
 puts "\n\nRunning platgen - output is squelched\n\n"
 exec platgen -p xc7z020clg400-1 -lang verilog -intstyle pa -toplevel no -ti system_i -msg __xps/ise/xmsgprops.lst system.mhs
 puts "\n\nDone\n\n"
