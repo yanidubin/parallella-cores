@@ -6,38 +6,43 @@ simulators =
 
 [verilog]
 src_files =
- rtl/verilog/fifos/fifo_mem.v
- rtl/verilog/fifos/fifo_full_block.v
- rtl/verilog/fifos/fifo_empty_block.v
- rtl/verilog/common/synchronizer.v
- rtl/verilog/fifos/fifo.v
- rtl/verilog/common/toggle2pulse.v
- rtl/verilog/common/pulse2toggle.v
- rtl/verilog/elink/ewrapper_link_txo.v
- rtl/verilog/elink/ewrapper_link_rxi.v
- rtl/verilog/common/pulse2pulse.v
- rtl/verilog/common/mux4.v
- rtl/verilog/axi/axi_slave_addrch.v
- rtl/verilog/parallella-I/fpgacfg.v
- rtl/verilog/elink/ewrapper_link_transmitter.v
- rtl/verilog/elink/ewrapper_link_receiver.v
- rtl/verilog/elink/ewrapper_io_tx_slow.v
- rtl/verilog/elink/ewrapper_io_rx_slow.v
- rtl/verilog/clocks/io_clock_gen_600mhz.v
- rtl/verilog/axi/axi_slave_wr.v
- rtl/verilog/axi/axi_slave_rd.v
- rtl/verilog/axi/axi_master_wr.v
- rtl/verilog/axi/axi_master_rd.v
- rtl/verilog/elink/ewrapper_link_top.v
- rtl/verilog/axi/axi_slave.v
- rtl/verilog/axi/axi_master.v
- rtl/verilog/axi/axi_elink_if.v
- rtl/verilog/parallella-I/parallella.v
- rtl/verilog/parallella-I/parallella_z7_top.v
- rtl/verilog/gpio/parallella_gpio_emio.v
- rtl/verilog/system_stub.v
-#rtl/system/system.v
+ fpga/hdl/fifos/fifo_mem.v
+ fpga/hdl/fifos/fifo_full_block.v
+ fpga/hdl/fifos/fifo_empty_block.v
+ fpga/hdl/common/synchronizer.v
+ fpga/hdl/fifos/fifo.v
+ fpga/hdl/common/toggle2pulse.v
+ fpga/hdl/common/pulse2toggle.v
+ fpga/hdl/elink/ewrapper_link_txo.v
+ fpga/hdl/elink/ewrapper_link_rxi.v
+ fpga/hdl/common/pulse2pulse.v
+ fpga/hdl/common/mux4.v
+ fpga/hdl/axi/axi_slave_addrch.v
+ fpga/hdl/parallella-I/fpgacfg.v
+ fpga/hdl/elink/ewrapper_link_transmitter.v
+ fpga/hdl/elink/ewrapper_link_receiver.v
+ fpga/hdl/elink/ewrapper_io_tx_slow.v
+ fpga/hdl/elink/ewrapper_io_rx_slow.v
+ fpga/hdl/clocks/io_clock_gen_600mhz.v
+ fpga/hdl/axi/axi_slave_wr.v
+ fpga/hdl/axi/axi_slave_rd.v
+ fpga/hdl/axi/axi_master_wr.v
+ fpga/hdl/axi/axi_master_rd.v
+ fpga/hdl/elink/ewrapper_link_top.v
+ fpga/hdl/axi/axi_slave.v
+ fpga/hdl/axi/axi_master.v
+ fpga/hdl/axi/axi_elink_if.v
+ fpga/hdl/parallella-I/parallella.v
+ fpga/hdl/parallella-I/parallella_z7_top.v
+ fpga/hdl/gpio/parallella_gpio_emio.v
+ fpga/projects/parallella_7010_headless/parallella_7010_headless.srcs/sources_1/imports/parallella_7010_headless/system_stub.v
 
 tb_private_src_files =
 
 include_files =
+
+[provider]
+name = github
+user = parallella
+repo = parallella-hw
+branch = master
