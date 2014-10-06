@@ -35,7 +35,7 @@ src_files =
  fpga/hdl/parallella-I/parallella.v
  fpga/hdl/parallella-I/parallella_z7_top.v
  fpga/hdl/gpio/parallella_gpio_emio.v
- fpga/projects/parallella_7010_headless/parallella_7010_headless.srcs/sources_1/imports/parallella_7010_headless/system_stub.v
+ fpga/projects/parallella_7020_headless/parallella_7020_headless.srcs/sources_1/imports/parallella_7020_headless/system_stub.v
 
 tb_private_src_files =
 
